@@ -1,0 +1,75 @@
+/* Fonts Poppins - main */
+@import url('https://fonts.googleapis.com/css?family=Coiny|Montserrat|Oxygen|Poppins|Varela+Round');
+
+html {
+    font-size: calc(0.5em + 1vw); 
+    max-width: 100%; 
+}
+
+/***** MAIN.CSS *****/
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*** Title ***/
+
+.font-weight-bold {
+ margin-top: 70px;
+ margin-bottom: 70px;
+}
+
+/*** Cards ***/
+
+.card {
+    max-width: 100%;
+    width: 70%;
+    border: none;
+}
+
+.card-title {
+    font-weight: bold;
+    color: #212121;
+}
+
+.card-text {
+    font-size: 1.4rem;
+    color: #212121;
+}
+
+.card-img-top {
+    width: 700px;
+    height: 250px;
+    max-width: 100%;
+}
+
+
+/*** Modal ***/
+
+.modal-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.form-group {
+    font-size: 1.2rem;
+}
+
+.form-control {
+    font-size: 1.2rem;
+}
+
+/*** Buttons ***/
+
+.btn-details {
+    font-size: 1.2rem;
+}
+
+.btn-block, .btn-attend, .btn-interested, .btn-noattend, .btn-list {
+    font-size: 1.2rem;
+}
+
+
+
+
+

@@ -1,0 +1,168 @@
+{% extends "techforbiotech/base_professional.html" %}
+{% load static %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'professional/css/see_discounted_restaurants_and_bars.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<!--HUBSPOT, ALL THE MEMBERS AND ORGANIZATIONS-->   
+<div class="card text-center">
+  <div class="card-body" style="background-color:#084E75;">
+   <h4 style="color: #fff;">EVENT SPACE</h4>
+  </div>
+</div>  
+<!--Search Individuals-->   
+<div class="card text-center">
+  <div class="card-body" style="background-color:#084E75;">
+   <h5 style="color: #fff;">Search Type</h5>
+   <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2">
+          <div class="custom-control custom-radio">
+            <input type="radio" id="restaurants" name="customRadio" class="custom-control-input">
+            <label class="custom-control-label" for="restaurants" style="color: #fff; font-size: 1rem;">Restaurants</label>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="custom-control custom-radio">
+            <input type="radio" id="bars" name="customRadio" class="custom-control-input">
+            <label class="custom-control-label" for="bars" style="color: #fff; font-size: 1rem;">Bars</label>
+          </div>  
+        </div>
+        <div class="col-md-2">
+          <div class="custom-control custom-radio">
+            <input type="radio" id="all" name="customRadio" class="custom-control-input">
+            <label class="custom-control-label" for="all" style="color: #fff; font-size: 1rem;">All</label>
+          </div>  
+        </div>
+    </div>   
+  </div>
+</div>    
+          
+  
+    <!--Search by name-->
+    <div class="container-fluid">
+      <h4 class="mt-4 mb-4 ml-4 text-left">Search by name</h4>
+         <form class="form-inline my-2 my-lg-0 ml-4">
+            <input class="form-control mr-sm-2 mt-2" type="search"  aria-label="Search">
+            <button class="btn mt-2" type="submit">Search</button>
+        </form>
+    </div>
+        
+  <!--Available Event Spaces results-->
+  <div class="container-fluid mt-4 mb-4">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card text-center mb-2">
+          <img class="card-img-top mx-auto d-block mt-4" src="{% static 'manager/img/profilepicture100x100.svg' %}" alt="event space pp">
+        <div class="card-body">
+          <h5 class="card-title">La Fineze</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Restaurant</h6>
+          <h6 class="card-subtitle mb-2 text-muted">10% Discount for Domino's Users</h6>
+          <h6 class="card-subtitle mb-2 text-muted">14th 234 7ave, NYC</h6>
+        <p class="card-text">      
+        We are looking for software engineer to join our startup. You need to have 
+        5 years experience with current technologies...
+        </p>
+        <a class="btn" href="{% url 'professional-pro_view_event_space_details' %}" role="button">See Details</a>
+
+      </div>
+     </div>
+     <!--end of column-->
+    </div>
+    <div class="col-md-4">
+      <div class="card text-center mb-2">
+    <img class="card-img-top mx-auto d-block mt-4" src="{% static 'manager/img/profilepicture100x100.svg' %}" alt="Card image cap">    
+    <div class="card-body">
+        <h5 class="card-title">La Fineze</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Restaurant</h6>
+        <h6 class="card-subtitle mb-2 text-muted">10% Discount for Domino's Users</h6>
+        <h6 class="card-subtitle mb-2 text-muted">14th 234 7ave, NYC</h6>
+      <p class="card-text">      
+      We are looking for software engineer to join our startup. You need to have 
+      5 years experience with current technologies...
+      </p>
+      <a class="btn" href="#" role="button">See Details</a>
+
+    </div>
+   </div>
+  </div>
+  <div class="col-md-4">
+      <div class="card text-center mb-2">
+        <img class="card-img-top mx-auto d-block mt-4" src="{% static 'manager/img/profilepicture100x100.svg' %}" alt="Card image cap">  
+        <div class="card-body">
+            <h5 class="card-title">La Fineze</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Restaurant</h6>
+            <h6 class="card-subtitle mb-2 text-muted">10% Discount for Domino's Users</h6>
+            <h6 class="card-subtitle mb-2 text-muted">14th 234 7ave, NYC</h6>
+          <p class="card-text">      
+          We are looking for software engineer to join our startup. You need to have 
+          5 years experience with current technologies...
+          </p>
+          <a class="btn" href="#" role="button">See Details</a>
+  
+        </div>
+        </div>
+      </div>
+    </div>
+  <!--2sd row, available event spaces results-->      
+  <div class="row mt-4">
+      <div class="col-md-4">
+        <div class="card text-center mb-2">
+          <img class="card-img-top mx-auto d-block mt-4" src="{% static 'manager/img/profilepicture100x100.svg' %}" alt="Card image cap"> 
+          <div class="card-body">
+              <h5 class="card-title">La Fineze</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Restaurant</h6>
+              <h6 class="card-subtitle mb-2 text-muted">10% Discount for Domino's Users</h6>
+              <h6 class="card-subtitle mb-2 text-muted">14th 234 7ave, NYC</h6>
+            <p class="card-text">      
+            We are looking for software engineer to join our startup. You need to have 
+            5 years experience with current technologies...
+            </p>
+            <a class="btn" href="#" role="button">See Details</a>
+    
+          </div>
+        </div>
+      </div>
+    <div class="col-md-4">
+      <div class="card text-center mb-2">
+    <img class="card-img-top mx-auto d-block mt-4" src="{% static 'manager/img/profilepicture100x100.svg' %}" alt="Card image cap">
+    <div class="card-body">
+        <h5 class="card-title">La Fineze</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Restaurant</h6>
+        <h6 class="card-subtitle mb-2 text-muted">10% Discount for Domino's Users</h6>
+        <h6 class="card-subtitle mb-2 text-muted">14th 234 7ave, NYC</h6>
+      <p class="card-text">      
+      We are looking for software engineer to join our startup. You need to have 
+      5 years experience with current technologies...
+      </p>
+      <a class="btn" href="#" role="button">See Details</a>
+
+    </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card text-center mb-2">
+  <img class="card-img-top mx-auto d-block mt-4" src="{% static 'manager/img/profilepicture100x100.svg' %}" alt="Card image cap">  
+  <div class="card-body">
+      <h5 class="card-title">La Fineze</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Restaurant</h6>
+      <h6 class="card-subtitle mb-2 text-muted">10% Discount for Domino's Users</h6>
+      <h6 class="card-subtitle mb-2 text-muted">14th 234 7ave, NYC</h6>
+    <p class="card-text">      
+    We are looking for software engineer to join our startup. You need to have 
+    5 years experience with current technologies...
+    </p>
+    <a class="btn" href="#" role="button">See Details</a>
+
+  </div>
+     </div>
+    </div>
+   </div>
+  </div> 
+    
+
+
+{% endblock content %}    

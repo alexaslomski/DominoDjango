@@ -1,0 +1,418 @@
+{% extends "techforbiotech/base_professional.html" %}
+{% load static %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'professional/css/buy_tickets.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<!--Card BUY TICKETS FORM-->
+<div class="card mx-auto text-center mt-4">
+        <div class="shadow-lg p-3 mb-5 bg-white rounded">  
+      <img class="card-img-top" src="{% static 'professional/img/eventcoverimage.svg' %}" style="margin-top: 4rem;" alt="Card image cap">
+      <div class="card-body">
+        <h2 class="card-title">NYC PHARMA EXPO</h2>
+        <h4 class="card-subtitle mb-2 text-muted">Price</h4>
+        <h4 class="card-subtitle mt-4 mb-2 text-muted">04/25/2019 at 12:30 am</h4>
+        <h4 class="card-subtitle mb-2 text-muted">34th 6th Avenue suite 123</h4>
+        <h4 class="card-subtitle mb-4 text-muted">event created by Aleksandra Slomska</h4>
+        <!--buy tickets-->
+              <h2 class="card-title">BUY TICKETS</h2>
+              <h4>Payment</h4>
+              <h5>Accepted cards</h5>
+              <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-12">
+                        <img src="{% static 'professional/img/visa.svg' %}" class="img-fluid" alt="Responsive image"> 
+                        <img src="{% static 'professional/img/mastercard.svg' %}" class="img-fluid" alt="Responsive image"> 
+                        <img src="{% static 'professional/img/american-express.svg' %}" class="img-fluid" alt="Responsive image"> 
+                        <img src="{% static 'professional/img/discover.svg' %}" class="img-fluid" alt="Responsive image"> 
+                        <img src="{% static 'professional/img/paypal.svg' %}" class="img-fluid" alt="Responsive image"> 
+                    </div>
+                  </div>
+                </div>
+          <!--Payment form-->
+          <form class="mt-4">
+            <div class="form-group">
+                <label for="inputAddress">Name on the card</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Name">
+              </div>
+              <div class="form-group">
+                <label for="inputAddress2">Card number</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Card number">
+              </div> 
+            <div class="form-row mt-4">
+                <div class="form-group col-md-6">
+                <label for="inputMonth">Exp Month</label>
+                <select id="inputMonth" class="form-control">
+                      <option selected>Choose...</option>
+                      <option>January</option>
+                      <option>February</option>
+                      <option>March</option>
+                      <option>April</option>
+                      <option>May</option>
+                      <option>June</option>
+                      <option>July</option>
+                      <option>August</option>
+                      <option>September</option>
+                      <option>October</option>
+                      <option>November</option>
+                      <option>December</option>
+                 </select>
+                </div>
+              <!--cvv-->  
+                <div class="form-group col-md-6">
+                  <label for="inputPassword4">CVV</label>
+                  <input type="password" class="form-control" id="inputPassword4" placeholder="CVV">
+                </div>
+              </div>
+              <!--exp year-->  
+              <div class="form-row mt-4">
+                  <div class="form-group col-md-6">
+                          <label for="inputPassword4">Exp Year</label>
+                          <input type="password" class="form-control" id="inputPassword4" placeholder="Year">
+              <!--country-->        
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputCountry">Country</label>
+                    <select id="inputCountry" class="form-control">
+                      <option selected>Choose...</option>
+                      <option>Afghanistan</option>
+                      <option>Albania</option>
+                      <option>Algeria</option>
+                      <option>Andorra</option>
+                      <option>Angola</option>
+                      <option>Antiqua and Barbuda</option>
+                      <option>Argentina</option>
+                      <option>Armenia</option>
+                      <option>Australia</option>
+                      <option>Austria</option>
+                      <option>Azerbaijan</option>
+                      <option>Bahamas</option>
+                      <option>Bahrain</option>
+                      <option>Bangladesh</option>
+                      <option>Barbados</option>
+                      <option>Belarus</option>
+                      <option>Belgium</option>
+                      <option>Belize</option>
+                      <option>Benin</option>
+                      <option>Bhutan</option>
+                      <option>Bolivia</option>
+                      <option>Bosnia and Herzegovina</option>
+                      <option>Botswana</option>
+                      <option>Brazil</option>
+                      <option>Brunei</option>
+                      <option>Bulgaria</option>
+                      <option>Burkina Faso</option>
+                      <option>Burundi</option>
+                      <option>Cabo Verde</option>
+                      <option>Cambodia</option>
+                      <option>Cameroon</option>
+                      <option>Canada</option>
+                      <option>Central African Republic</option>
+                      <option>Chad</option>
+                      <option>Chile</option>
+                      <option>China</option>
+                      <option>Colombia</option>
+                      <option>Comoros</option>
+                      <option>Democratic Republic of the Congo</option>
+                      <option>Republic of the Congo</option>
+                      <option>Costa Rica</option>
+                      <option>Cote d'Ivoire</option>
+                      <option>Croatia</option>
+                      <option>Cuba</option>
+                      <option>Cyprus</option>
+                      <option>Czech Republic</option>
+                      <option>Denmark</option>
+                      <option>Djibouti</option>
+                      <option>Dominica</option>
+                      <option>Dominican Republic</option>
+                      <option>Ecuador</option>
+                      <option>Egypt</option>
+                      <option>El Salvador</option>
+                      <option>Equatorial Guinea</option>
+                      <option>Eritrea</option>
+                      <option>Estonia</option>
+                      <option>Eswatini</option>
+                      <option>Ethiopia</option>
+                      <option>Fiji</option>
+                      <option>Finland</option>
+                      <option>France</option>
+                      <option>Gabon</option>
+                      <option>Gambia</option>
+                      <option>Georgia</option>
+                      <option>Germany</option>
+                      <option>Ghana</option>
+                      <option>Greece</option>
+                      <option>Grenada</option>
+                      <option>Guatemala</option>
+                      <option>Guinea</option>
+                      <option>Guinea-Bissau</option>
+                      <option>Guyana</option>
+                      <option>Haiti</option>
+                      <option>Honduras</option>
+                      <option>Hungary</option>
+                      <option>Iceland</option>
+                      <option>India</option>
+                      <option>Indonesia</option>
+                      <option>Iran</option>
+                      <option>Iraq</option>
+                      <option>Ireland</option>
+                      <option>Israel</option>
+                      <option>Italy</option>
+                      <option>Jamaica</option>
+                      <option>Japan</option>
+                      <option>Jordan</option>
+                      <option>Kazakhstan</option>
+                      <option>Kenya</option>
+                      <option>Kiribati</option>
+                      <option>Kosovo</option>
+                      <option>Kuwait</option>
+                      <option>Kyrgyzstan</option>
+                      <option>Laos</option>
+                      <option>Lativia</option>
+                      <option>Lebanon</option>
+                      <option>Lesotho</option>
+                      <option>Liberia</option>
+                      <option>Libya</option>
+                      <option>Liechtenstein</option>
+                      <option>Lithuania</option>
+                      <option>Luxembourg</option>
+                      <option>Macedonia</option>
+                      <option>Madagascar</option>
+                      <option>Malawi</option>
+                      <option>Malaysia</option>
+                      <option>Maldives</option>
+                      <option>Mali</option>
+                      <option>Malta</option>
+                      <option>Marshall Islands</option>
+                      <option>Mauritania</option>
+                      <option>Mauritius</option>
+                      <option>Mexico</option>
+                      <option>Micronesia</option>
+                      <option>Moldova</option>
+                      <option>Monaco</option>
+                      <option>Mongolia</option>
+                      <option>Montenegro</option>
+                      <option>Morocco</option>
+                      <option>Mozambique</option>
+                      <option>Myanmar</option>
+                      <option>Namibia</option>
+                      <option>Nauru</option>
+                      <option>Nepal</option>
+                      <option>Netherlands</option>
+                      <option>New Zealand</option>
+                      <option>Nicaragua</option>
+                      <option>Niger</option>
+                      <option>Nigeria</option>
+                      <option>North Korea</option>
+                      <option>Norway</option>
+                      <option>Oman</option>
+                      <option>Pakistan</option>
+                      <option>Palau</option>
+                      <option>Palestine</option>
+                      <option>Panama</option>
+                      <option>Papua New Guinea</option>
+                      <option>Paraguay</option>
+                      <option>Peru</option>
+                      <option>Philippines</option>
+                      <option>Poland</option>
+                      <option>Portugal</option>
+                      <option>Qatar</option>
+                      <option>Romania</option>
+                      <option>Russia</option>
+                      <option>Rwanda</option>
+                      <option>Saint Kitts and Nevis</option>
+                      <option>Saint Lucia</option>
+                      <option>Saint Vincent and the Grenadines</option>
+                      <option>Samoa</option>
+                      <option>San Marino</option>
+                      <option>Sao Tome and Principe</option>
+                      <option>Saudi Arabia</option>
+                      <option>Senegal</option>
+                      <option>Serbia</option>
+                      <option>Seychelles</option>
+                      <option>Sierra Leone</option>
+                      <option>Singapore</option>
+                      <option>Slovakia</option>
+                      <option>Slovenia</option>
+                      <option>Solomon Islands</option>
+                      <option>Somalia</option>
+                      <option>South Africa</option>
+                      <option>South Korea</option>
+                      <option>South Sudan</option>
+                      <option>Spain</option>
+                      <option>Sri Lanka</option>
+                      <option>Sudan</option>
+                      <option>Suriname</option>
+                      <option>Sweden</option>
+                      <option>Switzerland</option>
+                      <option>Syria</option>
+                      <option>Taiwan</option>
+                      <option>Tajikistan</option>
+                      <option>Tanzania</option>
+                      <option>Thailand</option>
+                      <option>Timor-Leste</option>
+                      <option>Togo</option>
+                      <option>Tonga</option>
+                      <option>Trinidad and Tobago</option>
+                      <option>Tunisia</option>
+                      <option>Turkey</option>
+                      <option>Turkmenistan</option>
+                      <option>Tuvalu</option>
+                      <option>Uganda</option>
+                      <option>Ukraine</option>
+                      <option>United Arab Emirates</option>
+                      <option>United Kingdom</option>
+                      <option>United States of America</option>
+                      <option>Uruguay</option>
+                      <option>Uzbekistan</option>
+                      <option>Vanuatu</option>
+                      <option>Vatican City</option>
+                      <option>Venezuela</option>
+                      <option>Vietnam</option>
+                      <option>Yemen</option>
+                      <option>Zambia</option>
+                      <option>Zimbabwe</option>
+                    </select>
+                  </div>
+                </div>     
+            </form>
+            <!--Billing form-->
+            <h4 class="mt-4">Billing Address</h4>
+              <form>
+                    <div class="form-row mt-4">
+                      <div class="form-group col-md-6">
+                        <label for="inputEmail4">First Name</label>
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="First Name">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputPassword4">Last Name</label>
+                        <input type="password" class="form-control" id="inputPassword4" placeholder="Last Name">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputAddress">Address</label>
+                      <input type="text" class="form-control" id="inputAddress" placeholder="Address">
+                    </div>
+                    <div class="form-group">
+                      <label for="inputAddress2">Address 2</label>
+                      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputCity">City</label>
+                        <input type="text" class="form-control" id="inputCity" placeholder="City">
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="inputState">State</label>
+                        <select id="inputState" class="form-control">
+                          <option selected>Choose...</option>
+                          <option>Alabama</option>
+                          <option>Alaska</option>
+                          <option>Arizona</option>
+                          <option>Arkansas</option>
+                          <option>California</option>
+                          <option>Colorado</option>
+                          <option>Connecticut</option>
+                          <option>Delaware</option>
+                          <option>Florida</option>
+                          <option>Georgia</option>
+                          <option>Hawaii</option>
+                          <option>Idaho</option>
+                          <option>Illinois</option>
+                          <option>Indiana</option>
+                          <option>Iowa</option>
+                          <option>Kansas</option>
+                          <option>Kentucky</option>
+                          <option>Louisiana</option>
+                          <option>Maine</option>
+                          <option>Maryland</option>
+                          <option>Massachusetts</option>
+                          <option>Michigan</option>
+                          <option>Minnesota</option>
+                          <option>Mississippi</option>
+                          <option>Missouri</option>
+                          <option>Montana</option>
+                          <option>Nebraska</option>
+                          <option>Nevada</option>
+                          <option>New Hampshire</option>
+                          <option>New Jersey</option>
+                          <option>New Mexico</option>
+                          <option>New York</option>
+                          <option>North California</option>
+                          <option>North Dakota</option>
+                          <option>Ohio</option>
+                          <option>Oklahoma</option>
+                          <option>Oregon</option>
+                          <option>Pennsylvania</option>
+                          <option>Rhode Island</option>
+                          <option>South Carolina</option>
+                          <option>South Dakota</option>
+                          <option>Tennessee</option>
+                          <option>Texas</option>
+                          <option>Utah</option>
+                          <option>Vermont</option>
+                          <option>Virginia</option>
+                          <option>Washington</option>
+                          <option>West Virginia</option>
+                          <option>Wisconsin</option>
+                          <option>Wyoming</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-md-2">
+                        <label for="inputZip">Zip</label>
+                        <input type="text" class="form-control" id="inputZip" placeholder="Zip">
+                      </div>
+                    </div>
+                  </form>
+              <!--Tickets-->
+              <h4 class="mt-4 mb-4">Tickets</h4>
+         <form>
+            <div class="form-group">
+              <label for="inputState">Amount</label>
+              <select id="inputState" class="form-control">
+                          <option selected>Choose...</option>
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                        </select>
+            </div>
+            <div class="form-group">
+              <label for="inputAddress2">Name to be printed on the ticket</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="First and last name">
+            </div>
+        </form>
+    
+        <h6 class="card-text text-muted">
+          Due to security reasons of our events, please note that one person cannot purchase more than 4 tickets. If the amount of 
+          tickets you wish to purchase exceeds one, you need to provide first and last name of professional/s
+          for whom you are buying ticket/s as well as your own name. You are obliged to show your ID and ticket in order to enter the event.
+          The name printed on the ticket has to match with the name on your ID. The rule applies to all 
+          professionals for whom you are buying tickets. 
+        </h6>
+        <button type="submit" class="btn btn-lg rounded mt-4">Purchase</button> 
+            </div>
+           </div>
+          </div>
+         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock content %} 

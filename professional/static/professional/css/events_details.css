@@ -1,0 +1,70 @@
+/* Fonts Poppins - main */
+@import url('https://fonts.googleapis.com/css?family=Coiny|Montserrat|Oxygen|Poppins|Varela+Round');
+
+html {
+    font-size: calc(0.5em + 1vw); 
+    max-width: 100%; 
+}
+
+/***** EVENTSDETAILS.CSS *****/
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+/*** Title ***/
+
+.font-weight-bold {
+   margin-top: 70px;
+   margin-bottom: 70px;
+   color: #212121;
+   font-size: 2.5rem;
+}
+
+/*** Cards ***/
+
+.card {
+    width: 70%;
+    max-width: 100%;
+    border: transparent;
+}
+
+.card-title {
+    font-weight: bold;
+    color: #212121;
+}
+
+.card-img-top {
+    width: 100%;
+    max-width: 100%;
+}
+
+
+/*** Modal ***/
+
+.modal-title {
+    font-weight: bold;
+}
+
+/*** Buttons ***/
+
+.btn-block {
+    font-size: 1.5rem;
+}
+
+.btn-interested, .btn-noattend, .btn-attend, .btn-block, .btn-details, .btn-list {
+    color: #fff;
+    background-color: #084E75;
+    font-size: 1rem;
+  }
+
+  a {
+      color: #fff;
+  }
+
+  a:hover {
+    color: #09c4c4;
+    text-decoration: none;
+}
+
+
+

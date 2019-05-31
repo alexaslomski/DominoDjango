@@ -1,0 +1,284 @@
+{% extends "techforbiotech/base_professional.html" %}
+{% load static %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'professional/css/create_event.css' %}">
+{% endblock %}
+
+{% block content %}
+
+ <!--Profile navigation-->     
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-ellipsis-h fa-1x"></i></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+<div class="navbar-nav text-left mt-2">
+
+<!--My Profile-->  
+<a class="card-link ml-4" href="{% url 'professional-pro_view_my_profile' %}" style="color: #BBDEFB; font-size: 15px;">
+My Profile</a>
+
+<!--Visitor Mode View-->
+<a class="card-link ml-4 mb-2" href="{% url 'professional-pro_view_edit_your_events' %}" style="color: #BBDEFB; font-size: 15px;">Edit Your        
+Events</a>   
+
+</div>
+</div>
+</div>
+</nav>  
+<!--end of profile navigation-->    
+
+
+ <!--First Card, EVENT NAME, DATE, PRICE, TYPE, DESCRIPTION-->                             
+ <div class="card mx-auto d-block mt-4">
+   <a href="#" data-toggle="modal" data-target="#editmain" class="float-right"><i class="fas fa-edit fa-2x mb-2"></i></a>
+<!-- Modal -->
+<div class="modal fade bd-example-modal-lg " id="editmain" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg " role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title text-muted" id="exampleModalLabel">Edit Event Details</h6>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <img class="img-fluid mx-auto d-block" src="{% static 'professional/img/partyevent.svg' %}" alt="Card image cap">     
+                  <div class="container-fluid mt-4">
+                      <div class="row mx-auto">
+                        <div class="col-md-12">
+                          <form role="form">
+                            <div class="form-group">
+                              <label for="exampleInputEmail1">
+                               Title
+                              </label>
+                              <input type="name" class="form-control" id="exampleInputEmail1" />
+                            </div>
+                          </form>
+                        </div>
+                        </div>
+                        <div class="row mx-auto">
+                            <div class="col-md-12">
+                              <form role="form">
+                                <div class="form-group">
+                                  <label for="exampleInputEmail1">
+                                    Date
+                                  </label>
+                                  <input type="userputsdateitself" class="form-control" value="ex. 2019/05/20"/>
+                                </div>
+                              </form>
+                            </div>
+                            </div>
+                            <div class="row mx-auto">
+                                <div class="col-md-12">
+                                  <form role="form">
+                                    <div class="form-group">
+                                      <label for="exampleInputEmail1">
+                                        Time
+                                      </label>
+                                      <input type="userputsdateitself" class="form-control" value="ex. 12:00am"/>
+                                    </div>
+                                  </form>
+                                </div>
+                                </div>
+                        <div class="row mx-auto">
+                            <div class="col-md-12">
+                              <form role="form">
+                                <div class="form-group">
+                                  <label for="exampleInputEmail1">
+                                    <div class="row">
+                                      <div class="col-md-6">
+                                          <div class="custom-control custom-checkbox my-1 mr-sm-2" >
+                                              <input type="checkbox" name="investor" class="custom-control-input" id="free">
+                                              <label class="custom-control-label" for="free">Free</label>
+                                           
+                                            </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                          <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                              <input type="checkbox" name="company" class="custom-control-input" id="paid">
+                                              <label class="custom-control-label" for="paid">Paid</label>
+                                            </div>  
+                                      </div> 
+                                  </div>
+                                  </label>
+                                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Tell the price if paid">
+                                </div>
+                              </form>
+                            </div>
+                          </div>  
+                            <div class="row mx-auto">
+                                <div class="col-md-12">
+                                  
+                                      <div class="form-group">
+                                          <label for="exampleInputEmail1">Location</label>
+                                          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Give your own location"></input>
+                                          <a href="{% url 'professional-pro_view_see_discounted_restaurants_and_bars' %}">
+                                          <button type="button" class="btn btn-save mt-2 mb-2" style="font-size: 1.2rem;">Search Discounted Restaurants and Bars</button></a>
+                                        </div>
+                                  
+                                </div>
+                              </div>    
+                              <div class="row mx-auto">
+                                  <div class="col-md-12">
+                                    
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Add Speakers</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Search by name"></input>
+                                            <a href="{% url 'professional-pro_view_see_discounted_restaurants_and_bars' %}">
+                                            <button type="button" class="btn btn-save mt-2 mb-2 float-right" style="font-size: 1.2rem;">Add Speaker</button></a>
+                                          </div>
+                                    
+                                  </div>
+                                  <a class="card-link mt-4 ml-4" data-toggle="collapse" href="#outofplatform" role="button" aria-expanded="false" aria-controls="collapseExample" style="font-size: 1.2rem; color: #09da09;">
+                                      Add professional outside the platform
+                                     </a>
+                                     <div class="collapse" id="outofplatform" style="margin-top: 10px;">
+                                        <div class="card card-body" style="width: 100%;">
+                                            <form>
+                                                 <div class="form-group">
+                                                   <label for="exampleInputEmail1">First Name</label>
+                                                   <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                 </div>
+                                                 <div class="form-group">
+                                                   <label for="exampleInputPassword1">Last Name</label>
+                                                   <input type="password" class="form-control" id="exampleInputPassword1">
+                                                 </div>
+                                                 <div class="form-group">
+                                                     <label for="exampleInputPassword1">Occupation</label>
+                                                     <input type="password" class="form-control" id="exampleInputPassword1">
+                                                 </div>
+                                                 <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                    <label class="custom-control-label" for="customCheck1">The individual agreed for submitting
+                                                        its name on the event speakers list.
+                                                    </label>
+                                                  </div>  
+                                               </form>
+                                               <p class="text-left mt-4" style="font-size: 1.2rem; color: #09da09;">Invite your collegue to join tech for biotech platform.
+                                                 Type their email and click SEND button. We will send them an invitation. 
+                                               </p>
+                                               <div class="form-group">
+                                                  <label for="exampleInputEmail1">Email address</label>
+                                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                </div>
+                                                <button class="btn btn-save">Send</button>
+                                                 
+                                      </div>
+                                      
+                                    </div>    
+                                    
+                                    
+                                </div>  
+          
+
+      
+        </div>
+        <div class="modal-footer mt-4">
+          <button type="button" class="btn btn-save">SAVE EVENT</button>
+        </div>
+    
+      </div>
+    
+    </div>
+  </div>
+  </div>
+
+
+  <div class="shadow-lg p-3 mb-5 bg-white rounded">     
+  <div class="card-body text-center">
+      <img class="card-img-top mx-auto d-block" src="{% static 'professional/img/partyevent.svg' %}" alt="Card image cap">                     
+      <h2 class="card-title text-center mt-4">Title</h2>
+      <h3 class="card-subtitle text-center mt-2 mb-2">Date and Time</h3>
+      <h4 class="card-text">Free/Paid</h4>
+      <h4 class="card-text mb-2">If Paid/Price</h4>
+      <h4 class="card-text mt-2">Address</h4>
+      <p class="card-text mt-4">                    
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+               consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                 cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                  anim id est laborum.</p>   
+                  <div class="container-fluid mt-4">
+                    <h4 class="mt-2 mb-4">Speakers</h4>
+                    <div class="row mx-auto">
+                      <div class="col-md-12">
+                       <div class="row mx-auto">
+                        <div class="col-md-4">
+                         <div class="card mx-auto">
+                          <img class="card-img-top-team mx-auto" alt="profile image" src="{% static 'professional/img/blue.svg' %}"/>
+                          <div class="card-block">
+                            <h5 class="card-title-team mt-2">
+                                Name
+                            </h5>
+                            <p class="card-text-team mt-2">
+                                Occupation
+                            </p>
+                            <p class="text-center">
+                              <a class="btn btn-speaker" href="#">See Profile</a>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                        <div class="col-md-4">
+                      <div class="card mx-auto">
+                        <img class="card-img-top-team mx-auto" alt="profile image" src="{% static 'professional/img/blue.svg' %}" />
+                        <div class="card-block">
+                          <h5 class="card-title-team mt-2">
+                            Name
+                          </h5>
+                          <p class="card-text-team mt-2">
+                            Occupation
+                          </p>
+                          <p class="text-center">
+                            <a class="btn btn-speaker" href="#">See Profile</a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                      <div class="col-md-4">
+                    <div class="card mx-auto">
+                      <img class="card-img-top-team mx-auto" alt="profile image" src="{% static 'professional/img/blue.svg' %}" />
+                        <div class="card-block">
+                          <h5 class="card-title-team mt-2">
+                            Name
+                          </h5>
+                        <p class="card-text-team mt-2">
+                            Occupation
+                        </p>
+                        <p class="text-center">
+                           <a class="btn btn-speaker" href="#">See Profile</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>      
+   
+ 
+
+    
+    </div>
+  </div> 
+  </div>
+  
+    </div>
+ 
+ 
+
+             
+    
+              
+
+                     
+
+                     
+
+                         
+{% endblock content %} 
+                   

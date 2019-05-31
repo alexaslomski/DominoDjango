@@ -1,0 +1,173 @@
+{% extends "techforbiotech/base_manager.html" %}
+{% load static %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'manager/css/my_profile.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<!--Profile navigation-->       
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-ellipsis-h fa-1x"></i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav text-center mt-2">
+
+<!--See Available Event Spaces-->
+<a href="{% url 'manager-manager_view_available_event_spaces' %}" class="ml-4 mb-2" style="color: #BBDEFB; font-size: 15px;">See Available Event Spaces        
+</a>
+
+<!--Logout-->
+<a href="#" class="card-link ml-4 mb-2" style="font-size: 15px;">Logout</a>
+
+
+      </div>
+    </div>
+  </nav>
+
+  <!--RESUME CARDS-->
+<!--All together-->                             
+<div class="card mx-auto d-block mt-4">
+    <a href="#" data-toggle="modal" data-target="#editmain" class="float-right"><i class="fas fa-edit fa-2x mb-2"></i></a>
+                        
+    <!-- Modal -->
+    <div class="modal fade bd-example-modal-lg" id="editmain" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title text-muted" id="exampleModalLabel">Edit Main</h2>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <img class="card-img-top mx-auto d-block" src="{% static 'professional/img/profilepicture.svg' %}" alt="profileimage">
+                <input id="imageUpload" type="file" name="profilepicture" placeholder="Photo" required="" capture>
+                <script>
+                      $(".card-img-top").click(function(e) {
+                      $("#imageUpload").click();
+                         });
+                      
+                      function fasterPreview( uploader ) {
+                      if ( uploader.files && uploader.files[0] ){
+                          $('.card-img-top').attr('src', 
+                             window.URL.createObjectURL(uploader.files[0]) );
+                            }
+                                }
+                      
+                           $("#imageUpload").change(function(){
+                           fasterPreview( this );
+                               });
+                  </script>
+                <div class="container-fluid mt-4">
+                        <!--Name, occupation-->
+                            <form role="form">
+                              <div class="form-group">
+                                <label for="exampleInputEmail1">
+                                    First Name
+                                  </label>
+                                  <input type="firstname" class="form-control" id="firstname" />
+                                </div>
+                                <div class="form-group">
+                                  <label for="lastname">Last Name</label>
+                                  <input type="lastname" class="form-control" id="lastname" />
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="occupation">Occupation</label>
+                                    <input type="occupation" class="form-control" id="occupation" />
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="description">Description</label>
+                                      <textarea class="form-control" id="description" rows="2"></textarea>
+                                  </div>
+                              </form>
+                  
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-lg rounded">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+          
+  <!--Profile picture-->
+    <div class="shadow-lg p-3 mb-5 bg-white rounded">     
+      
+    <div class="card-body text-center">
+        <img class="card-img-top mx-auto d-block mt-4" src="{% static 'professional/img/profilepicture.svg' %}" alt="profileimage">  
+      <input id="imageUpload" type="file" name="profilepicture" placeholder="Photo" required="" capture>
+      <script>
+            $(".card-img-top").click(function(e) {
+            $("#imageUpload").click();
+               });
+            
+            function fasterPreview( uploader ) {
+            if ( uploader.files && uploader.files[0] ){
+                $('.card-img-top').attr('src', 
+                   window.URL.createObjectURL(uploader.files[0]) );
+                  }
+                      }
+            
+                 $("#imageUpload").change(function(){
+                 fasterPreview( this );
+                     });
+        </script>
+     <h3 class="card-title mt-4">La Fineze</h3>
+      <h5 class="card-subtitle mt-2">Italian Cuisine</h5>
+      <h5 class="card-subtitle mt-2">Address</h5>
+        <div class="container">
+            <div class="row mx-auto">
+                <div class="col-md-12">
+                    <p class="card-text mt-2">
+                     La Fineze is an Italian cusine loacted in the heart of Italian distric.
+                     We appreciate the essense of the taste and the stuff.
+                    </p>
+                  <img src="{% static 'tfb/img/emblems/esn.svg' %}" class="img-fluid-emblem-active" alt="...">
+                  
+    
+          </div>
+        </div>
+      </div>
+               
+        <h3 class="card-title mt-4 text-center">Hosted Events</h3>
+        <ul class="list-group text-center" style="font-size: 1.2rem;">
+            <li class="list-group-item" style="border:none;">
+              BIG PHARMA - July 21th 2018
+          
+            </li>
+            <li class="list-group-item" style="border:none;">
+              BIG PHARMA - July 21th 2018
+            
+            </li>
+            <li class="list-group-item" style="border:none;">
+              BIG PHARMA - July 21th 2018
+            
+            </li>
+          </ul>
+          <h3 class="card-title mt-4 text-center">About us</h3>
+          <p class="card-text"> 
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+          cupidatat non proident, sunt in culpa qui officia deserunt mollit
+
+        </p>
+        <h3 class="card-title mt-4 text-center">Contact</h3>
+        <ul class="list-group" style="font-size: 1.2rem;">
+            <li class="list-group-item" style="border: none;">Oleg Krasnyj</li>
+            <li class="list-group-item" style="border: none;">+1 646-206-0176</li>
+            <li class="list-group-item" style="border: none;">aleksandravslomska@gmail.com</li>
+            <li class="list-group-item" style="border: none;">New York City</li>
+            <li class="list-group-item" style="border: none;">website:<a href="#"> www.lafineze.com</a></li>
+          </ul>
+  
+  </div>
+  </div>
+   
+
+{% endblock content %}                                      

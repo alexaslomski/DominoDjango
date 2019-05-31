@@ -1,0 +1,66 @@
+/* Fonts Poppins - main */
+@import url('https://fonts.googleapis.com/css?family=Coiny|Montserrat|Oxygen|Poppins|Varela+Round');
+
+html {
+    font-size: calc(0.5em + 1vw); 
+    max-width: 100%; 
+}
+
+/***** HUBSPOT.CSS *****/
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-img-top {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.img-fluid {
+    width: 40px;
+    height: 40px;
+}
+
+.btn {
+    color: #000;
+    background-color: #BBDEFB;
+}
+
+.btn-profile {
+    font-size: 1rem;
+}
+
+.custom-control-label {
+    font-size: 1rem;
+}
+
+.custom-control-view {
+    font-size: 0.8rem;
+    color: #fff;
+}
+
+
+h2, .form-control { 
+    color: #000;
+}
+
+.form-control {
+    font-size: 1rem;
+}
+
+.img-fluid-award {
+    width: 35px; 
+    height: 35px;
+}
+
+.img-fluid-emblem-active {
+    width: 30px;
+    height: 30px;
+}
+

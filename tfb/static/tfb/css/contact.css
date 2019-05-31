@@ -1,0 +1,28 @@
+/* Fonts Poppins - main */
+@import url('https://fonts.googleapis.com/css?family=Coiny|Montserrat|Oxygen|Poppins|Varela+Round');
+
+html {
+    font-size: calc(0.5em + 1vw); 
+    max-width: 100%; 
+}
+
+/***** MAIN.CSS *****/
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*** Card ***/
+
+.form-group {
+  font-size: 0.9rem;
+}
+
+.btn {
+    background-color: #084E75;
+    border-radius: 0%;
+    font-size: 0.9rem;
+}
+
+
+

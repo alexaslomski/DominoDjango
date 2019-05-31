@@ -1,0 +1,86 @@
+/* Fonts K2D - main */
+@import url('https://fonts.googleapis.com/css?family=Coiny|Montserrat|Oxygen|Poppins|Varela+Round');
+
+html {
+    font-size: calc(0.5em + 1vw); 
+    max-width: 100%; 
+}
+
+/***** HUBINFORMATION.CSS *****/
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*** Buttons ***/
+
+.btn {
+    background-color: #084E75;
+    border-radius: 0%;
+}
+
+/*** Card ***/
+
+.card {
+    border: none;
+}
+
+.card-img-top {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.img-fluid {
+    width: 35px;
+    height: 35px;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-subtitle {
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+.headline {
+    line-height: 15px;
+}
+
+.card-p {
+    max-width: 100%;
+}
+
+/*** Images ***/
+
+.img-fluid {
+    width: 3rem;
+    height: 3rem;
+}
+
+.img-fluid-emblem-active {
+    width: 2rem;
+    height: 2rem;
+}
+
+.img-fluid-leader {
+    width: 6rem;
+    height: 6rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+

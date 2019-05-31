@@ -1,0 +1,35 @@
+/* Fonts Poppins - main */
+@import url('https://fonts.googleapis.com/css?family=Coiny|Montserrat|Oxygen|Poppins|Varela+Round');
+
+html {
+    font-size: calc(0.5em + 1vw); 
+    max-width: 100%; 
+}
+
+/***** GETTHEEMBLEM.CSS *****/
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*** First card, ABOUT US ***/  
+
+  .card {
+      max-width: 100%;
+      width: 80%;
+      border: none;
+  }
+
+  .card-title {
+      text-align: center;
+      font-weight: bold;
+  }
+
+/*** emblems ***/
+
+.img-fluid-e {
+    width: 2.3rem;
+    height: 2.3rem;
+}
+

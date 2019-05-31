@@ -1,0 +1,40 @@
+/* Fonts K2D - main */
+@import url('https://fonts.googleapis.com/css?family=Coiny|Montserrat|Oxygen|Poppins|Varela+Round');
+
+html {
+    font-size: calc(0.5em + 1vw); 
+    max-width: 100%; 
+}
+
+/***** EVENTSINFORMATION.CSS *****/
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*** Card ***/
+
+.card { 
+    border: none;
+    color: #fff;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+/*** Image, emblems ***/
+
+.img-fluid {
+   height: 150px;
+   width: 150px;  
+}
+
+
+

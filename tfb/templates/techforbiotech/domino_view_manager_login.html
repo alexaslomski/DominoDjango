@@ -1,0 +1,42 @@
+{% extends "techforbiotech/base_domino.html" %}
+{% load static %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'tfb/css/manager_login.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<!--Log in form-->
+<h2 class="text-center mt-4">Log in</h2>
+  <form class="text-center mx-auto" style="max-width: 100%; width: 65%;">
+        <div class="form-group mx-auto">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group mx-auto">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <a href="#" class="btn mx-auto mb-2">Log in</a>
+  </form>
+      <!--Forgot password--> 
+      <p>
+          <h5 class="card-link text-center mb-4" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" style="cursor: pointer; color: #084E75;">
+           Forgot Password?   
+          </h5>
+          <div class="collapse text-center" id="collapseExample">
+        
+                <p class="text-muted">
+                  Please provide us with your email address. The remainder will be sent over there.
+                </p> 
+                     <div class="form-group mx-auto" style="max-width:100%; width: 65%;">
+                       <label for="exampleInputEmail1">Email</label>
+                       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                     </div>
+                 <button type="button" class="btn btn-login">Send</button>    
+          </div>  
+          </p>
+
+{% endblock content %} 

@@ -1,0 +1,22 @@
+/* Fonts K2D - main */
+@import url('https://fonts.googleapis.com/css?family=Coiny|Montserrat|Oxygen|Poppins|Varela+Round');
+
+html {
+    font-size: calc(0.5em + 1vw); 
+    max-width: 100%; 
+}
+
+/***** MANAGERLOGIN.CSS *****/
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+ font-weight: bold;
+}
+
+
+
+
+

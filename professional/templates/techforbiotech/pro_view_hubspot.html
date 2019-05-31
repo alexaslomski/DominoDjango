@@ -1,0 +1,395 @@
+{% extends "techforbiotech/base_professional.html" %}
+{% load static %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'professional/css/hubspot.css' %}">
+
+{% endblock %}
+{% block content %}
+
+<!--HUBSPOT, ALL THE MEMBERS AND ORGANIZATIONS-->   
+<div class="card text-center">
+    <div class="card-body" style="background-color:#084E75;">
+     <h3 style="color: #fff;">HUBSPOT</h3>
+    </div>
+  </div>  
+<!--Search Individuals-->   
+<div class="card text-center">
+    <div class="card-body" style="background-color:#084E75;">
+     <h5 style="color: #fff;">Search Individuals</h5>
+     <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-2">
+              <div class="custom-control-view custom-checkbox my-1 mr-sm-2">
+                  <input type="checkbox" name="Mobile application" class="custom-control-input" id="techview">
+                  <label class="custom-control-label" for="techview" style="font-size: 1.2rem;">Life Sciences</label>
+                  
+                </div> 
+          </div>
+          <div class="col-md-2">
+              <div class="custom-control-view custom-checkbox my-1 mr-sm-2">
+                  <input type="checkbox" name="Mobile application" class="custom-control-input" id="biotechview">
+                  <label class="custom-control-label" for="biotechview" style="font-size: 1.2rem;">Academia</label>
+            
+                </div> 
+          </div>
+          <div class="col-md-2">
+              <div class="custom-control-view custom-checkbox my-1 mr-sm-2">
+                  <input type="checkbox" name="Mobile application" class="custom-control-input" id="startupview">
+                  <label class="custom-control-label" for="startupview" style="font-size: 1.2rem;">Students</label>
+              
+                </div> 
+          </div>
+          <div class="col-md-2">
+              <div class="custom-control-view custom-checkbox my-1 mr-sm-2">
+                  <input type="checkbox" name="Mobile application" class="custom-control-input" id="corpview">
+                  <label class="custom-control-label" for="corpview" style="font-size: 1.2rem;">Company</label>
+               
+                </div> 
+          </div>
+          <div class="col-md-2">
+              <div class="custom-control-view custom-checkbox my-1 mr-sm-2">
+                  <input type="checkbox" name="Mobile application" class="custom-control-input" id="schoolingview">
+                  <label class="custom-control-label" for="schoolingview" style="font-size: 1.2rem;">Startup</label>
+          
+                </div> 
+          </div>
+          <div class="col-md-2">
+              <div class="custom-control-view custom-checkbox my-1 mr-sm-2">
+                  <input type="checkbox" name="Mobile application" class="custom-control-input" id="sponsorview">
+                  <label class="custom-control-label" for="sponsorview" style="font-size: 1.2rem;">Investment</label>
+               
+                </div> 
+          </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-md-2">
+                <div class="custom-control-view custom-checkbox my-1 mr-sm-2">
+                    <input type="checkbox" name="Mobile application" class="custom-control-input" id="eventspaceview">
+                    <label class="custom-control-label" for="eventspaceview" style="font-size: 1.2rem;">Research</label>
+                  
+                  </div> 
+            </div>
+            <div class="col-md-2">
+                <div class="custom-control-view custom-checkbox my-1 mr-sm-2">
+                    <input type="checkbox" name="Mobile application" class="custom-control-input" id="all">
+                    <label class="custom-control-label" for="all" style="font-size: 1.2rem;">All</label>
+                   
+                  </div> 
+            </div>
+
+          </div>  
+      </div>   
+    </div>
+  </div>    
+
+
+<!--Search by occupation, name, company-->
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+    <h5 class="mt-4 mb-4 ml-4">Search by name</h5>
+     <form class="form-inline my-2 my-lg-0 ml-4">
+        <input class="form-control mr-sm-2 mt-2" type="search" aria-label="Search">
+        <button class="btn mt-2" type="search" style="font-size: 1rem;">Search</button>
+    </form>
+    </div>
+
+
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Emblem System</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <ul class="list-group">
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                     Life Sciences
+                    <img src="{% static 'tfb/img/emblems/bbn.svg' %}" class="img-fluid-emblem-active" alt="...">  
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                     Research Organization
+                     <img src="{% static 'tfb/img/emblems/tn.svg' %}" class="img-fluid-emblem-active" alt="..."> 
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                     Academia
+                     <img src="{% static 'tfb/img/emblems/an.svg' %}" class="img-fluid-emblem-active" alt="..."> 
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Startup
+                      <img src="{% static 'tfb/img/emblems/sn.svg' %}" class="img-fluid-emblem-active" alt="..."> 
+                   </li>
+                   <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Company
+                      <img src="{% static 'tfb/img/emblems/cn.svg' %}" class="img-fluid-emblem-active" alt="..."> 
+                   </li>
+                   <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Investment
+                        <img src="{% static 'tfb/img/emblems/in.svg' %}" class="img-fluid-emblem-active" alt="..."> 
+                     </li>
+                     <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Student
+                        <img src="{% static 'tfb/img/emblems/csn.svg' %}" class="img-fluid-emblem-active" alt="..."> 
+                     </li>
+                </ul>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+
+  </div>
+</div> 
+
+
+    
+           
+    </div>
+    </div>   
+    </div>    
+
+<!--Hub pictures-->
+   <div class="container-fluid text-center" style="margin-top: 50px;">
+      <div class="row mt-4 mb-2">
+        <div class="col-md-3">
+            <div class="card mb-2">
+                <img class="card-img-top mx-auto mt-4" src="{% static 'professional/img/blue.png' %}" alt="Card image cap">
+                <div class="card-body">
+                    <img src="{% static 'tfb/img/emblems/bbn.svg' %}" class="img-fluid mb-2" alt="...">   
+                    <h6 class="card-title">Alexandra Maslowanians</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn" style="font-size: 0.8rem;">See Profile</a>
+                  </div>
+              </div>
+</div>
+
+<div class="col-md-3">
+    <div class="card mb-2">
+        <img class="card-img-top mx-auto mt-4" src="{% static 'professional/img/blue.png' %}" alt="Card image cap">
+        <div class="card-body">
+            <img src="{% static 'tfb/img/emblems/tn.svg' %}" class="img-fluid mb-2" alt="...">   
+            <h6 class="card-title">Card title</h6>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+          
+          
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn" style="font-size: 0.8rem;">See Profile</a>
+          </div>
+      </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card mb-2">
+                <img class="card-img-top mx-auto mt-4" src="{% static 'professional/img/blue.png' %}" alt="Card image cap">
+                <div class="card-body">
+                    <img src="{% static 'tfb/img/emblems/csn.svg' %}" class="img-fluid mb-2" alt="...">   
+                    <h6 class="card-title">Card title</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                 
+                  
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn" style="font-size: 0.8rem;">See Profile</a>
+                  </div>
+              </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card mb-2">
+                <img class="card-img-top mx-auto mt-4" src="{% static 'professional/img/blue.png' %}" alt="Card image cap">
+                <div class="card-body">
+                    <img src="{% static 'tfb/img/emblems/sn.svg' %}" class="img-fluid mb-2" alt="...">   
+                    <h6 class="card-title">Card title</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn" style="font-size: 0.8rem;">See Profile</a>
+                  </div>
+              </div>
+        </div>
+        </div>
+       
+   
+      <div class="row mt-2">
+ <div class="col-md-3">
+    <div class="card mb-2">
+        <img class="card-img-top mx-auto mt-4" src="{% static 'professional/img/blue.png' %}" alt="Card image cap">
+        <div class="card-body">
+            <img src="{% static 'tfb/img/emblems/cn.svg' %}" class="img-fluid mb-2" alt="...">   
+            <h6 class="card-title">Card title</h6>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn" style="font-size: 0.8rem;">See Profile</a>
+          </div>
+      </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card mb-2">
+                <img class="card-img-top mx-auto mt-4" src="{% static 'professional/img/blue.png' %}" alt="Card image cap">
+                <div class="card-body">
+                    <img src="{% static 'tfb/img/emblems/in.svg' %}" class="img-fluid mb-2" alt="...">   
+                    <h6 class="card-title">Card title</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                  
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn" style="font-size: 0.8rem;">See Profile</a>
+                  </div>
+              </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card mb-2">
+                <img class="card-img-top mx-auto mt-4" src="{% static 'professional/img/blue.png' %}" alt="Card image cap">
+                <div class="card-body">
+                    <img src="{% static 'tfb/img/emblems/bbn.svg' %}" class="img-fluid mb-2" alt="...">   
+                    <img src="{% static 'tfb/img/emblems/moleculeleader3.svg' %}" class="img-fluid" alt="...">
+                    <h6 class="card-title">Card title</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                
+                  
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn" style="font-size: 0.8rem;">See Profile</a>
+                  </div>
+              </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card mb-2">
+                <img class="card-img-top mx-auto mt-4" src="{% static 'professional/img/blue.png' %}" alt="Card image cap">
+                <div class="card-body">
+                    <img src="{% static 'tfb/img/emblems/an.svg' %}" class="img-fluid mb-2" alt="...">   
+                    <h6 class="card-title">Card title</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn" style="font-size: 0.8rem;">See Profile</a>
+                  </div>
+              </div>
+        </div>
+
+
+      </div>
+      <div class="row mt-2">
+        <div class="col-md-3">
+            <div class="card mb-2">
+                <img class="card-img-top mx-auto mt-4" src="{% static 'professional/img/blue.png' %}" alt="Card image cap">
+                <div class="card-body">
+                    <img src="{% static 'tfb/img/emblems/tn.svg' %}" class="img-fluid mb-2" alt="...">   
+                    <h6 class="card-title">Card title</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              
+                  
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn" style="font-size: 0.8rem;">See Profile</a>
+                  </div>
+              </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card mb-2">
+                <img class="card-img-top mx-auto mt-4" src="{% static 'professional/img/blue.png' %}" alt="Card image cap">
+                <div class="card-body">
+                    <img src="{% static 'tfb/img/emblems/bbn.svg' %}" class="img-fluid mb-2" alt="...">   
+                    <h6 class="card-title">Card title</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+               
+                  
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn" style="font-size: 0.8rem;">See Profile</a>
+                  </div>
+              </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card mb-2">
+                <img class="card-img-top mx-auto mt-4" src="{% static 'professional/img/blue.png' %}" alt="Card image cap">
+                <div class="card-body">
+                    <img src="{% static 'tfb/img/emblems/bbn.svg' %}" class="img-fluid mb-2" alt="...">   
+                    <h6 class="card-title">Card title</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn" style="font-size: 0.8rem;">See Profile</a>
+                  </div>
+              </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card mb-2">
+                <img class="card-img-top mx-auto mt-4" src="{% static 'professional/img/blue.png' %}" alt="Card image cap">
+                
+                <div class="card-body">
+                    <img src="{% static 'tfb/img/emblems/bbn.svg' %}" class="img-fluid mb-2" alt="...">   
+                    <img src="{% static 'tfb/img/emblems/moleculeleader3.svg' %}" class="img-fluid" alt="...">
+                    <h6 class="card-title">Card title</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                  
+                  
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn" style="font-size: 0.8rem;">See Profile</a>
+                  </div>
+              </div>
+        </div>
+      </div>
+      <div class="row mt-2 mb-4">
+        <div class="col-md-3">
+            <div class="card mb-2">
+                <img class="card-img-top mx-auto mt-4" src="{% static 'professional/img/blue.png' %}" alt="Card image cap">
+                <div class="card-body">
+                    <img src="{% static 'tfb/img/emblems/bbn.svg' %}" class="img-fluid mb-2" alt="...">   
+                    <h6 class="card-title">Card title</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              
+                  
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn" style="font-size: 0.8rem;">See Profile</a>
+                  </div>
+              </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card mb-2">
+                <img class="card-img-top mx-auto mt-4" src="{% static 'professional/img/blue.png' %}" alt="Card image cap">
+                <div class="card-body">
+                    <img src="{% static 'tfb/img/emblems/bbn.svg' %}" class="img-fluid mb-2" alt="...">   
+                    <h6 class="card-title">Card title</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                
+                  
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn" style="font-size: 0.8rem;" >See Profile</a>
+                  </div>
+              </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card mb-2">
+                <img class="card-img-top mx-auto mt-4" src="{% static 'professional/img/blue.png' %}" alt="Card image cap">
+                <div class="card-body">
+                    <img src="{% static 'tfb/img/emblems/bbn.svg' %}" class="img-fluid mb-2" alt="...">   
+                    <h6 class="card-title">Card title</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+               
+                  
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn" style="font-size: 0.8rem;">See Profile</a>
+                  </div>
+              </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card mb-2">
+                <img class="card-img-top mx-auto mt-4" src="{% static 'professional/img/blue.png' %}" alt="Card image cap">
+                <div class="card-body">
+                    <img src="{% static 'tfb/img/emblems/bbn.svg' %}" class="img-fluid mb-2" alt="...">   
+                    <h6 class="card-title">Card title</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn" style="font-size: 0.8rem;">See Profile</a>
+                  </div>
+              </div>
+        </div>
+      </div>
+    </div>  
+    </div>
+
+ <!--   
+ <img src="{% static 'professional/img/i.svg' %}" class="img-fluid mx-auto d-block mb-4" style="width: 200px; height: 200px;">   
+ -->
+
+ {% endblock content %}  

@@ -1,0 +1,61 @@
+{% extends "techforbiotech/base_domino.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'tfb/css/manager_signup.css' %}">
+{% endblock %}
+
+{% block content %}   
+
+<h2 class="text-center mt-4 mb-4" style="font-weight: bold;">Sign up</h2>
+<div class="content-section">
+  <form method="POST">
+    {% csrf_token %}
+    <fieldset class="form-group mx-auto" style="max-width: 100%; width: 65%;">
+      {{ form|crispy }}
+    </fieldset>
+    <div class="form-group mx-auto" style="max-width: 100%; width: 65%;">
+      <h6 class="text-left" style="font-size: 0.9rem;">What type of event space do you provide?*</h6>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+              <div class="custom-control custom-radio">
+                  <input type="radio" id="rest" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="rest">Restaurant</label>
+                </div>   
+          </div>
+          <div class="col-md-6">
+              <div class="custom-control custom-radio">
+                  <input type="radio" id="baar" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="baar">Bar</label>
+                </div> 
+          </div>
+          </div>
+
+          <div class="row mt-2">
+              <div class="col-md-12">
+                  <div class="custom-control custom-radio">
+                      <input type="radio" id="rcenter" name="customRadio" class="custom-control-input">
+                      <label class="custom-control-label" for="rcenter">Research Center</label>
+                    </div> 
+              </div>
+          
+        </div>
+
+        <button class="btn mt-4 mb-4 text-center" type="submit">Sign Up</button>
+       
+      </div>
+      <small class="text-muted mt-4">
+          Already Have An Account? <a class="ml-2 text-center" href="#">Log In</a>
+      </small>
+    </div>
+  </form>
+ 
+ 
+
+</div>
+
+
+
+{% endblock content %} 

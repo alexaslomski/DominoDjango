@@ -1,0 +1,286 @@
+{% extends "techforbiotech/base_manager.html" %}
+{% load static %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'professional/css/events_details.css' %}">
+{% endblock %}
+
+{% block content %}
+
+
+<!--Upcoming Events-->
+<h1 class="font-weight-bold text-center text-muted">UPCOMING EVENTS</h1>
+
+<!--First card, FIRST EVENT-->
+<div class="card shadow p-3 mb-5 bg-white rounded text-center mx-auto">
+    <div class="card-body">
+    <img class="card-img-top" src="{% static 'professional/img/partyevent.svg' %}" alt="eventpicture" />
+    <h2 class="card-title mt-4 mb-4">Title of the event</h2>
+      <h4 class="card-subtitle mt-4 mb-4 text-muted">Date and time</h4>
+      <h4 class="card-subtitle mb-2 text-muted">Ticket price</h4>
+      <h5 class="card-text mt-4 mb-4">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+         consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+           cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.  
+      </h5>           
+  <button type="button" class="btn btn-details" data-toggle="modal" data-target=".bd-example-modal-lg" >
+      See Details
+  </button>
+  <!-- Modal -->
+  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-muted" id="exampleModalLabel">Event Details</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="card" style="width: 100%;">
+                <img class="card-img-top mx-auto d-block" src="{% static 'professional/img/eventcoverimage.svg' %}" alt="eventcoverimage">  
+                <div class="card-body">
+                  <h2 class="card-title">Title of the event</h2>
+                  <h4 class="card-subtitle mt-4 mb-2 text-muted">Date and time</h4>
+                  <h4 class="card-subtitle mb-2 text-muted">Price</h4>
+                  <h4 class="card-subtitle mb-2 text-muted">Address</h4>
+                  <h4 class="card-subtitle mb-4 text-muted">event created by name</h4>
+                  <h5 class="card-text mt-4 mb-4 text-left">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                       consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                         cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                          anim id est laborum.        
+                  </h5>
+               
+             <a href="{% url 'professional-pro_view_buy_tickets' %}" class="btn btn-block rounded">BUY TICKETS</a>
+                      <button type="button" class="btn btn-attend mb-2">
+                            <i class="fas fa-check mr-2"></i>Will attend</button>
+                            <button type="button" class="btn btn-interested mb-2">
+                            <i class="fas fa-check mr-2"></i>Interested</button>
+                            <button type="button" class="btn btn-noattend mb-2">
+                            <i class="fas fa-check mr-2"></i>Can't attend</button>
+                </div>
+              </div>
+        </div>
+        <div class="modal-footer">
+          <a href="{% url 'professional-pro_view_list_of_attendees' %}">
+          <button type="button" class="btn btn-list">List of attendees</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+
+  <!--Second card, SECOND EVENT-->
+<div class="card shadow p-3 mb-5 bg-white rounded text-center mx-auto">
+    <div class="card-body">
+        <img class="card-img-top" src="{% static 'professional/img/upscaleevent.svg' %}" alt="eventpicture">
+      <h2 class="card-title mt-4 mb-4">Title of the event</h2>
+      <h4 class="card-subtitle mt-4 mb-4 text-muted">Date and time</h4>
+      <h4 class="card-subtitle mb-2 text-muted">Ticket price</h4>
+      <h5 class="card-text mt-4 mb-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+           consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+             cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum.</h5>
+  <button type="button" class="btn btn-details" data-toggle="modal" data-target=".bd-example-modal-lg" >
+      See Details
+  </button>
+  <!-- Modal -->
+  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-muted" id="exampleModalLabel">Event Details</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="card" style="width: 100%;">
+                <img class="card-img-top mx-auto d-block" src="{% static 'professional/img/eventcoverimage.svg' %}" alt="eventcoverimage" style="width: 700px; height: 250px;">  
+                <div class="card-body">
+                  <h2 class="card-title">Title of the event</h2>
+                  <h4 class="card-subtitle mt-4 mb-2 text-muted">Date and time</h4>
+                  <h4 class="card-subtitle mb-2 text-muted">Price</h4>
+                  <h4 class="card-subtitle mb-2 text-muted">Address</h4>
+                  <h4 class="card-subtitle mb-4 text-muted">event created by name</h4>
+                  <h5 class="card-text mt-4 mb-4 text-left">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                       consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                         cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                          anim id est laborum.        
+                  </h5>
+               
+                    <a href="{% url 'professional-pro_view_buy_tickets' %}" class="mx-auto">
+                    <button type="button" class="btn btn-block">BUY TICKETS</button>
+                    </a>
+                  <button type="button" class="btn btn-attend">Will attend</button>
+                  <button type="button" class="btn btn-interested">Interested</button>
+                  <button type="button" class="btn btn-noattend">Can't attend</button>
+                </div>
+              </div>
+        </div>
+        <div class="modal-footer">
+          <a href="{% url 'professional-pro_view_list_of_attendees' %}">
+          <button type="button" class="btn btn-list">List of attendees</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+
+<!--Third card, THIRD EVENT-->
+<div class="card shadow p-3 mb-5 bg-white rounded text-center mx-auto">
+    <div class="card-body">
+        <img class="card-img-top" src="{% static 'professional/img/morningevent.svg' %}" alt="eventpicture">
+      <h2 class="card-title mt-4 mb-4">Title of the event</h2>
+      <h4 class="card-subtitle mt-4 mb-4 text-muted">Date and time</h4>
+      <h4 class="card-subtitle mb-2 text-muted">Ticket price</h4>
+      <h5 class="card-text mt-4 mb-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+           consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+             cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum.</h5>
+  <button type="button" class="btn btn-details" data-toggle="modal" data-target=".bd-example-modal-lg" >
+      See Details
+  </button>
+  <!-- Modal -->
+  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-muted" id="exampleModalLabel">Event Details</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="card" style="width: 100%;">
+                <img class="card-img-top mx-auto d-block" src="{% static 'professional/img/eventcoverimage.svg' %}" alt="eventcoverimage" style="width: 700px; height: 250px;">  
+                <div class="card-body">
+                  <h2 class="card-title">Title of the event</h2>
+                  <h4 class="card-subtitle mt-4 mb-2 text-muted">Date and time</h4>
+                  <h4 class="card-subtitle mb-2 text-muted">Price</h4>
+                  <h4 class="card-subtitle mb-2 text-muted">Address</h4>
+                  <h4 class="card-subtitle mb-4 text-muted">event created by name</h4>
+                  <h5 class="card-text mt-4 mb-4 text-left">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                       consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                         cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                          anim id est laborum.        
+                  </h5>
+               
+                    <a href="{% url 'professional-pro_view_buy_tickets' %}" class="mx-auto">
+                    <button type="button" class="btn btn-block">BUY TICKETS</button>
+                    </a>
+                  <button type="button" class="btn btn-attend">Will attend</button>
+                  <button type="button" class="btn btn-interested">Interested</button>
+                  <button type="button" class="btn btn-noattend">Can't attend</button>
+                </div>
+              </div>
+        </div>
+        <div class="modal-footer">
+          <a href="{% url 'professional-pro_view_list_of_attendees' %}">
+          <button type="button" class="btn btn-list">List of attendees</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>  
+
+<!--Fourth card, FOURTH EVENT-->
+<div class="card shadow p-3 mb-5 bg-white rounded text-center mx-auto">
+    <div class="card-body">
+        <img class="card-img-top" src="{% static 'professional/img/upscaleevent.svg' %}" alt="eventpicture">
+      <h2 class="card-title mt-4 mb-4">Title of the event</h2>
+      <h4 class="card-subtitle mt-4 mb-4 text-muted">Date and time</h4>
+      <h4 class="card-subtitle mb-2 text-muted">Ticket price</h4>
+      <h5 class="card-text mt-4 mb-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+           consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+             cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum.</h5>
+  <button type="button" class="btn btn-details" data-toggle="modal" data-target=".bd-example-modal-lg" >
+      See Details
+  </button>
+  <!-- Modal -->
+  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-muted" id="exampleModalLabel">Event Details</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="card" style="width: 100%;">
+                <img class="card-img-top mx-auto d-block" src="{% static 'professional/img/eventcoverimage.svg' %}" alt="eventcoverimage" style="width: 700px; height: 250px;">  
+                <div class="card-body">
+                  <h2 class="card-title">Title of the event</h2>
+                  <h4 class="card-subtitle mt-4 mb-2 text-muted">Date and time</h4>
+                  <h4 class="card-subtitle mb-2 text-muted">Price</h4>
+                  <h4 class="card-subtitle mb-2 text-muted">Address</h4>
+                  <h4 class="card-subtitle mb-4 text-muted">event created by name</h4>
+                  <p class="card-text mt-4 mb-4 text-left">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                       consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                         cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                          anim id est laborum.        
+                  </p>
+               
+                    <a href="{% url 'professional-pro_view_buy_tickets' %}" class="mx-auto">
+                    <button type="button" class="btn btn-block">BUY TICKETS</button>
+                    </a>
+                  <button type="button" class="btn btn-attend">Will attend</button>
+                  <button type="button" class="btn btn-interested">Interested</button>
+                  <button type="button" class="btn btn-noattend">Can't attend</button>
+                </div>
+              </div>
+        </div>
+        <div class="modal-footer">
+          <a href="{% url 'professional-pro_view_list_of_attendees' %}">
+          <button type="button" class="btn btn-list">List of attendees</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>  
+
+
+
+  {% endblock content %} 

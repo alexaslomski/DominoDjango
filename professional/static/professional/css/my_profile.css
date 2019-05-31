@@ -1,0 +1,156 @@
+/* Fonts Poppins - main */
+@import url('https://fonts.googleapis.com/css?family=Coiny|Montserrat|Oxygen|Poppins|Varela+Round');
+
+html {
+    font-size: calc(0.5em + 1vw); 
+    max-width: 100%; 
+}
+
+/***** MYPROFILE.CSS *****/
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*** Emblems icons ***/
+
+.img-fluid-emblem {
+    width: 35px;
+    height: 35px;
+}
+
+.img-fluid-emblem-active {
+    width: 50px;
+    height: 50px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+/*** Card ***/
+
+.card {
+   width: 70%;
+   max-width: 100%;
+   border: transparent;
+}
+
+.card-img-top-job {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    max-width: 100%;
+}
+
+.card-body {
+    margin-top: 2rem;
+}
+
+.card-title {
+    font-weight: bold;
+    color: #212121;
+}
+
+.card-text {
+    font-size: 1.1rem;
+}
+
+/*** Modal ***/
+
+.modal-title {
+    font-weight: bold;
+}
+
+.form-group {
+    font-size: 1.2rem;
+}
+
+/*** TOGGLE SWITCH ***/
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 28px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #0adb5a;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px rgb(221, 157, 157);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(-22px);
+    -ms-transform: translateX(-22px);
+    transform: translateX(-22px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+/*** Like button ***/
+
+.fa-thumbs-up {
+    color: #084E75;
+}
+
+.fa-thumbs-up:hover {
+    color: #072482;
+}
+
+/*** Profile Image for ajax ***/
+
+#imageUpload {
+    display: none;
+}
+
+.card-img-top {
+    cursor: pointer;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+
+  

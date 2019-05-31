@@ -1,0 +1,76 @@
+{% extends "techforbiotech/base_domino.html" %}
+{% load static %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'tfb/css/get_the_emblem.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid mt-4">
+        <div class="row">
+    <div class="shadow p-3 mb-5 bg-white rounded mx-auto" style="width: 95%; max-width: 100%;">   
+            <ul class="list-group mx-auto mt-4 mb-4" style="width: 70%; max-width: 100%;">
+                <h2 class="card-title text-center mb-4">Emblem System</h2>
+                <h4 class="card-title text-center mb-4">Smooth Communication</h4>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Life Sciences
+                      <img src="{% static 'tfb/img/emblems/lsn.svg' %}" class="img-fluid-e" alt="...">   
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Technology
+                       <img src="{% static 'tfb/img/emblems/tn.svg' %}" class="img-fluid-e" alt="...">   
+                     </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                       Research Organization
+                      <img src="{% static 'tfb/img/emblems/rn.svg' %}" class="img-fluid-e" alt="..."> 
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Academia
+                      <img src="{% static 'tfb/img/emblems/an.svg' %}" class="img-fluid-e" alt="..."> 
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Students
+                      <img src="{% static 'tfb/img/emblems/csn.svg' %}" class="img-fluid-e" alt="..."> 
+                    </li>
+                   <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Company
+                      <img src="{% static 'tfb/img/emblems/cn.svg' %}" class="img-fluid-e" alt="...">   
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Startup
+                      <img src="{% static 'tfb/img/emblems/sn.svg' %}" class="img-fluid-e" alt="..."> 
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Investment
+                      <img src="{% static 'tfb/img/emblems/in.svg' %}" class="img-fluid-e" alt="..."> 
+                    </li>
+                    <p class="text-left mb-4 mt-4" style="font-size: 1rem;">
+                            Choose the emblem with which you are associating yourself the most within 
+                            registration process. The Emblem is required.
+                        </p>
+                        <p class="text-left mb-4" style="font-size: 1rem;">
+                            You can change emblem at any time in your profile. 
+                        </p>
+                        <p class="text-left mb-4" style="font-size: 1.2rem;">
+                            WEAR YOUR EMBLEM ON THE EVENTS.
+                        </p>
+                        <p class="text-left mb-4" style="font-size: 1rem;">
+                            Event's Organizator will provide emblems during the meetup. 
+                        </p>
+                  </ul>   
+        </div>
+ 
+    </div>
+
+</div>  
+
+
+
+
+
+
+
+
+
+{% endblock content %}

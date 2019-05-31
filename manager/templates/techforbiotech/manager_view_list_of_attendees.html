@@ -1,0 +1,160 @@
+{% extends "techforbiotech/base_manager.html" %}
+{% load static %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'professional/css/personalevent_lists.css' %}">
+{% endblock %}
+
+{% block content %}
+
+
+ <!--BREADCRUMB LIST-->         
+    <div class="card shadow p-3 mb-5 mt-2 bg-white rounded text-center mx-auto" style="width: 95%;">
+        <div class="card-body">
+          <nav class="breadcrumb mb-4">
+            <a class="breadcrumb-item active">WILL ATTEND</a>
+            <a class="breadcrumb-item" href="{% url 'manager-manager_view_list_of_interested' %}">INTERESTED</a>
+            <a class="breadcrumb-item" href="{% url 'manager-manager_view_list_of_cant_attend' %}">CAN'T ATTEND</a>
+        </nav>  
+                          
+<!--List of will attend--> 
+  <div class="container-fluid" style="margin-top: 3rem; margin-bottom: 3rem;">
+    <div class="row">
+        <div class="col-md-4">
+          <div class="media">
+           <img class="mr-3" src="{% static 'professional/img/blue.png' %}" alt="Generic placeholder image">
+           <div class="media-body">
+            <h5 class="mt-0">Sylvia Hosano</h5>
+            <h6>Cras sit amet nibh libero.</h6>
+            <img src="{% static 'professional/img/b.svg' %}" class="img-fluid" alt="...">   
+          </div>
+        </div>
+      </div>
+    <div class="col-md-4">
+        <div class="media">
+          <img class="mr-3" src="{% static 'professional/img/blue.png' %}" alt="Generic placeholder image">
+         <div class="media-body">
+          <h5 class="mt-0">Micheal Douglas</h5>
+          <h6>Cras sit amet nibh libero.</h6>
+          <img src="{% static 'professional/img/s.svg' %}" class="img-fluid" alt="...">   
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="media">
+        <img class="mr-3" src="{% static 'professional/img/blue.png' %}" alt="Generic placeholder image">
+      <div class="media-body">
+        <h5 class="mt-0">Veronica Paolini</h5>
+        <h6>Cras sit amet nibh libero.</h6>
+        <img src="{% static 'professional/img/t.svg' %}" class="img-fluid" alt="...">   
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="row mt-4">
+      <div class="col-md-4">
+        <div class="media">
+          <img class="mr-3" src="{% static 'professional/img/blue.png' %}" alt="Generic placeholder image">
+          <div class="media-body">
+            <h5 class="mt-0">Sylvia Hosano</h5>
+            <h6>Cras sit amet nibh libero.</h6>
+            <img src="{% static 'professional/img/c.svg' %}" class="img-fluid" alt="...">   
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="media">
+          <img class="mr-3" src="{% static 'professional/img/blue.png' %}" alt="Generic placeholder image">
+          <div class="media-body">
+            <h5 class="mt-0">Micheal Douglas</h5>
+            <h6>Cras sit amet nibh libero.</h6>
+            <img src="{% static 'professional/img/i.svg' %}" class="img-fluid" alt="...">    
+            </div>
+          </div>
+        </div>
+      <div class="col-md-4">
+        <div class="media">
+          <img class="mr-3" src="{% static 'professional/img/blue.png' %}" alt="Generic placeholder image">
+          <div class="media-body">
+            <h5 class="mt-0">Veronica Paolini</h5>
+            <h6>Cras sit amet nibh libero.</h6>
+            <img src="{% static 'professional/img/ss.svg' %}" class="img-fluid" alt="...">   
+            </div>
+          </div>
+        </div>
+    </div>
+      <div class="row mt-4">
+         <div class="col-md-4">
+           <div class="media">
+            <img class="mr-3" src="{% static 'professional/img/blue.png' %}" alt="Generic placeholder image">
+             <div class="media-body">
+               <h5 class="mt-0">Sylvia Hosano</h5>
+               <h6>Cras sit amet nibh libero.</h6>
+               <img src="{% static 'professional/img/s.svg' %}" class="img-fluid" alt="...">   
+              </div>
+            </div>
+          </div>
+         <div class="col-md-4">
+          <div class="media">
+            <img class="mr-3" src="{% static 'professional/img/blue.png' %}" alt="Generic placeholder image">
+            <div class="media-body">
+              <h5 class="mt-0">Micheal Douglas</h5>
+              <h6>Cras sit amet nibh libero.</h6>
+              <img src="{% static 'professional/img/a.svg' %}" class="img-fluid" alt="...">   
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="media">
+            <img class="mr-3" src="{% static 'professional/img/blue.png' %}" alt="Generic placeholder image">
+            <div class="media-body">
+              <h5 class="mt-0">Veronica Paolini</h5>
+              <h6>Cras sit amet nibh libero.</h6>
+              <img src="{% static 'professional/img/cs.svg' %}" class="img-fluid" alt="...">    
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="row mt-4">
+          <div class="col-md-4">
+            <div class="media">
+              <img class="mr-3" src="{% static 'professional/img/blue.png' %}" alt="Generic placeholder image">
+              <div class="media-body">
+                <h5 class="mt-0">Sylvia Hosano</h5>
+                <h6>Cras sit amet nibh libero.</h6>
+                <img src="{% static 'professional/img/b.svg' %}" class="img-fluid" alt="...">   
+              </div>
+            </div>
+          </div>
+        <div class="col-md-4">
+          <div class="media">
+            <img class="mr-3" src="{% static 'professional/img/blue.png' %}" alt="Generic placeholder image">
+             <div class="media-body">
+              <h5 class="mt-0">Micheal Douglas</h5>
+              <h6>Cras sit amet nibh libero.</h6>
+              <img src="{% static 'professional/img/t.svg' %}" class="img-fluid" alt="...">   
+              </div>
+            </div>
+          </div>
+        <div class="col-md-4">
+          <div class="media">
+            <img class="mr-3" src="{% static 'professional/img/blue.png' %}" alt="Generic placeholder image">
+              <div class="media-body">
+                <h5 class="mt-0">Veronica Paolini</h5>
+                <h6>Cras sit amet nibh libero.</h6>
+                <img src="{% static 'professional/img/b.svg' %}" class="img-fluid" alt="...">   
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>                 
+    </div>
+</div>
+
+<!--COME BACK TO EDIT YOUR EVENTS-->            
+   <a href="edityourevents.html">                   
+      <button type="button" class="btn btn-lg rounded mt-5 mb-5 mx-auto d-block">Come back to Upcoming Events</button>
+   </a>  
+
+
+{% endblock content %} 

@@ -1,0 +1,123 @@
+{% extends "techforbiotech/base_professional.html" %}
+{% load static %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'professional/css/events_details.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<!--Profile navigation-->     
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-ellipsis-h fa-1x"></i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+  <div class="navbar-nav text-left mt-2">
+  
+
+  <!--My Profile-->  
+  <a class="card-link ml-4" href="{% url 'professional-pro_view_my_profile' %}" style="color: #BBDEFB; font-size: 15px;">
+  My Profile</a>
+
+  <!--Create Event-->
+  <a class="card-link ml-4 mb-2" href="{% url 'professional-pro_view_create_event' %}" style="color: #BBDEFB; font-size: 15px;">Create        
+  Event</a> 
+
+  </div>
+  </div>
+  </div>
+  </nav>  
+  <!--end of profile navigation-->
+ 
+   <!--Edit Your Events-->    
+  <h2 class="text-center text-muted" style="font-weight: bold; margin-top: 50px; margin-bottom: 50px;">Your Created Events</h2>
+      <div class="container-fluid mt-4">
+        <div class="row">
+            <div class="col-md-6">
+                    <div class="card mx-auto text-center" style="width: 500px;">
+                            <img class="card-img-top" src="{% static 'professional/img/tfb500.svg' %}" alt="Card image cap">
+                            <div class="shadow-lg p-3 mb-5 bg-white rounded"> 
+                            <div class="card-body">
+                              <h5 class="card-title">Big Pharma Expo</h5>
+                              <a href="#" class="btn btn-list">Edit Event</a>
+                              <div class="card-text mt-4">
+                              <a href="" class="card-link-delete" data-toggle="modal" data-target="#deleteevent" style="color:#ff0000;">Delete Event</a></div>
+  <!-- Modal -->
+  <div class="modal fade" id="deleteevent" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Delete Event</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-left">
+          <p>Are you sure that you want to delete TITLE OF THE EVENT?</p>
+          <p>Deleting Event will make it disappear from Upcoming Events and all the attendees 
+              that expressed their interest or willingness to come will be notified of the cancellation.
+          </p>  
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-list">Delete Event</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="container mt-4 text-center">
+<a href="{% url 'professional-pro_view_edit_events_list_of_attendees' %}"><p style="font-size: 1.3rem; color: #13c413;">Will attend: 567</p></a>
+    <p>Interested: 56</p>
+</div>
+        </div>
+        </div>
+  </div>
+            </div>
+            <div class="col-md-6">
+                    <div class="card mx-auto text-center" style="width: 500px;">
+                          <img class="card-img-top" src="{% static 'professional/img/tfb500.svg' %}" alt="Card image cap">
+                          <div class="shadow-lg p-3 mb-5 bg-white rounded">  
+                           <div class="card-body">
+                              <h5 class="card-title">Technology Today</h5>
+                              <a href="#" class="btn btn-list">Edit Event</a>
+                              <div class="card-text mt-4">
+                                    <a href="" class="card-link-delete" data-toggle="modal" data-target="#deleteevent" style="color:#ff0000;">Delete Event</a></div>
+                                    <div class="container mt-4 text-center">
+                                        <a href="{% url 'professional-pro_view_edit_events_list_of_attendees' %}"><p style="font-size: 1.3rem; color: #13c413;">Will attend: 567</p></a>
+                                        <p>Interested: 56</p>
+                                            </div>
+                              </div>
+                              </div>
+                          </div>
+            </div>
+        </div>
+        <div class="row mt-4 mb-4">
+            <div class="col-md-12">
+                    <div class="card mx-auto text-center" style="width: 500px;">
+                            <img class="card-img-top" src="{% static 'professional/img/tfb500.svg' %}" alt="Card image cap">
+                            <div class="shadow-lg p-3 mb-5 bg-white rounded"> 
+                            <div class="card-body">
+                              <h5 class="card-title">Tech for Biotech</h5>
+                              <a href="#" class="btn btn-list">Edit Event</a>
+                              <div class="card-text mt-4">
+                                    <a href="" class="card-link-delete" data-toggle="modal" data-target="#deleteevent" style="color:#ff0000;">Delete Event</a></div>
+                                    <div class="container mt-4 text-center">
+                                        <a href="{% url 'professional-pro_view_edit_events_list_of_attendees' %}"><p style="font-size: 1.3rem; color: #13c413;">Will attend: 567</p></a>
+                                        <p>Interested: 56</p>       
+                                            </div>
+                              </div>
+                              </div>
+                          </div>
+            </div>
+        </div>
+    </div>     
+
+
+    {% endblock content %} 
+
+       
+
+
+
+
+ 

@@ -1,0 +1,330 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+     <link rel="stylesheet" type="text/css" href="{% static 'tfb/css/bootstrap.css' %}">
+     <link rel="stylesheet" type="text/css" href="{% static 'tfb/css/main.css' %}">
+     <link rel="stylesheet" type="text/css" href="{% static 'tfb/css/style.css' %}">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+     {% if title %}
+       <title>Domino - {{ title }}</title>
+     {% else %}
+       <title>Domino</title>
+     {% endif %}
+</head>
+<body>
+
+<!--NAVIGATION MENU-->  
+    <div class="sticky-top">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">
+                <img src="{% static 'tfb/img/emblems/dominosubfont2.svg' %}" width="100" height="50" class="d-inline-block align-top" alt="">
+            </a>
+            <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav text-center ml-auto">
+                   <li class="nav-item px-2">
+                      <a class="nav-link" href="{% url 'tfb-home' %}">
+                       Home   
+                      </a>
+                    </li>
+                  <li class="nav-item px-2">
+                      <a class="nav-link" href="{% url 'tfb-domino_view_contact' %}">
+                       Contact Us
+                      </a>
+                    </li>  
+                <li class="nav-item px-2">
+                  <a class="nav-link" data-toggle="modal" data-target="#joinus" href="#">
+                      Register
+                  </a>
+                </li>
+                <li class="nav-item px-2">
+                    <a class="nav-link" data-toggle="modal" data-target="#login" href="#">
+                      Login
+                    </a>
+                  </li>
+              </ul>
+            </div>
+          </nav>
+         </div>
+      <!-- Modal Login -->
+      <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-muted" id="login">Log into your panel</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <p class="mt-2" style="font-size: 1rem;">Do you provide the event space for the venue?</p>
+                <p class="text-left"><a href="{% url 'users-register' %}" class="btn" style="font-size: 1rem;">Log in here</a></p>
+                <p class="text-left" style="font-size: 1rem;">Are you joining as Professional? Log in below</p>   
+                <form>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Email</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                 <a href="" class="btn">Log in</a>
+                  </form>
+                 <!--Forgot password--> 
+                 <p>
+                 <h5 class="card-link" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" style="cursor: pointer; color: #084E75; font-size: 1rem;">
+                  Forgot Password?   
+                 </h5>
+                 <div class="collapse" id="collapseExample">
+               
+                       <p class="text-muted">
+                         Please provide us with your email address. We will send you a remainder. 
+                       </p> 
+                            <div class="form-group">
+                              <label for="exampleInputEmail1">Email</label>
+                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                        <button type="button" class="btn">Submit</button>    
+                 </div>  
+                 </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!--Modal Join us-->
+<div class="modal fade bd-example-modal-lg " id="joinus" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title" id="exampleModalLabel">Join Life Sciences Community</h6>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+    <div class="modal-body">
+  <p class="mt-2" style="font-size: 0.9rem;">Do you provide the event space for the venue?</p>
+  <a href="#" class="btn" style="font-size: 0.9rem;">Sign up here</a>
+  
+  <p class="mt-4" style="font-size: 0.9rem;">Are you joining as Professional? Fill in the form below</p>        
+ 
+          <form class="mt-4">
+              <div class="form-group">
+                <label for="firstname">First Name</label>
+                <input type="firstname" class="form-control" id="firstname" aria-describedby="firstnameHelp">
+              </div>
+              <div class="form-group">
+                <label for="lastname">Last Name</label>
+                <input type="lastname" class="form-control" id="lastname">
+              </div>
+              <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email">
+              </div>
+              <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" class="form-control" id="password">
+              </div>
+              <div class="form-group">
+                  <label for="confirmpassword">Confirm Password</label>
+                  <input type="confirmpassword" class="form-control" id="confirmpassword">
+              </div>
+              <h5 class="mb-2" style="font-size: 0.9rem;">Please choose one emblem you would like to be associated with</h5>
+           
+              <div class="row">
+                <div class="col">
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="lifesciences" name="customRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="lifesciences">Life Sciences</label>
+                        <img src="{% static 'tfb/img/emblems/lsn.svg' %}" class="img-fluid mb-1" style="margin-top: -5px;" alt="...">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="tech" name="customRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="tech"> Technology</label>
+                        <img src="{% static 'tfb/img/emblems/tn.svg' %}" class="img-fluid mb-1" style="margin-top: -5px;" alt="...">
+                    </div>
+                </div>
+                </div>
+                <div class="row">
+                        <div class="col">
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="investor" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="investor">Investment</label>
+                                <img src="{% static 'tfb/img/emblems/in.svg' %}" class="img-fluid mb-1" style="margin-top: -5px;" alt="...">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="student" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="student">Student</label>
+                                <img src="{% static 'tfb/img/emblems/csn.svg' %}" style="margin-top: -5px;" class="img-fluid mb-1" alt="...">
+                            </div>
+                            </div> 
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="company" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="company">Company</label>
+                                <img src="{% static 'tfb/img/emblems/cn.svg' %}" style="margin-top: -5px;" class="img-fluid mb-1" alt="...">
+                            </div> 
+                        </div> 
+                     
+                          <div class="col">
+                              <div class="custom-control custom-radio">
+                                  <input type="radio" id="academia" name="customRadio" class="custom-control-input">
+                                  <label class="custom-control-label" for="academia">Academia</label>
+                                  <img src="{% static 'tfb/img/emblems/an.svg' %}" style="margin-top: -5px;" class="img-fluid mb-1" alt="...">
+                              </div>
+                        </div>
+                          </div> 
+                          <div class="row">
+                              <div class="col">
+                                  <div class="custom-control custom-radio">
+                                      <input type="radio" id="startup" name="customRadio" class="custom-control-input">
+                                      <label class="custom-control-label" for="startup">Startup</label>
+                                      <img src="{% static 'tfb/img/emblems/sn.svg' %}" style="margin-top: -5px;" class="img-fluid mb-1" alt="...">
+                                  </div>  
+                              </div>
+                              <div class="col">
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="research" name="customRadio" class="custom-control-input">
+                                    <label class="custom-control-label" for="research">Research</label>
+                                    <img src="{% static 'tfb/img/emblems/rn.svg' %}" style="margin-top: -5px;" class="img-fluid mb-1" alt="...">
+                                </div>
+                            </div>
+                             
+                              </div>    
+              <button type="submit" class="btn mt-4">Join us</button>
+            </form>  
+        </div>
+
+        <div class="modal-footer">
+          <span>By clicking Join us, you agree to the Tech for Biotech User Agreement, Privacy Policy, and Cookie Policy.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+      {% block content %} 
+      {% endblock content %}    
+      
+      {% block styles %}
+      {% endblock %}
+   
+<!--FOOTER-->
+<footer class="page-footer font-small stylish-color-dark pt-4" style="margin-top: 3rem;">
+    <div class="container text-center text-md-left">
+      <div class="row">
+        <div class="col-md-4 mx-auto">
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">DOMINO</h5>
+          <p class="info">Organize Events for Life Sciences Community. 
+             Network with the professionals from your industry.</p>
+        </div>
+        <hr class="clearfix w-100 d-md-none">
+
+         <div class="col-md-2 mx-auto">
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Legal</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="{% url 'tfb-domino_view_user_agreement' %}">User Agreement</a>
+              </li>
+              <li>
+                <a href="{% url 'tfb-domino_view_privacy_policy' %}">Privacy Policy</a>
+              </li>
+            <!--<li>
+                <a href="{% url 'tfb-domino_view_cookie_policy' %}">Cookie Policy</a>
+              </li>-->
+              <li>
+                <a href="{% url 'tfb-domino_view_copyright_policy' %}">Copyright Policy</a>
+              </li>
+            </ul>
+          </div>
+
+        <hr class="clearfix w-100 d-md-none">
+
+        <div class="col-md-2 mx-auto">
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Platform</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="{% url 'tfb-domino_view_events_information' %}">Events</a>
+            </li>
+            <li>
+              <a href="{% url 'tfb-domino_view_hub_information' %}">Hub</a>
+            </li>
+            <li>
+              <a href="{% url 'tfb-domino_view_community_guidelines' %}">Community Guidelines</a>
+            </li>
+            <!--<li>
+              <a href="{% url 'tfb-domino_view_guest_control' %}">Guest Control</a>
+            </li>-->
+          </ul>
+        </div>
+        <hr class="clearfix w-100 d-md-none">
+
+       <div class="col-md-2 mx-auto">
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">General</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="{% url 'tfb-domino_view_get_the_emblem' %}">About</a>
+            </li>
+            <li>
+              <a href="{% url 'tfb-domino_view_contact' %}">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+  <!--Social buttons--> 
+  <ul class="list-unstyled list-inline text-center">
+      <li class="list-inline-item">
+        <a class="btn-floating btn-fb mx-1">
+            <i class="fab fa-facebook-f fa-2x"></i>  
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-tw mx-1">
+            <i class="fab fa-twitter fa-2x"></i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-gplus mx-1">
+            <i class="fab fa-linkedin-in fa-2x"></i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-li mx-1">
+            <i class="fab fa-instagram fa-2x"></i>  
+        </a>
+      </li>
+    </ul>
+
+ <!--Copyright--> 
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+      <a href="https://mdbootstrap.com/bootstrap-tutorial/" style="color: #000;"> DOMINO</a>
+    </div>
+</footer>
+
+
+<!--Scripts-->
+<script src="{% static 'tfb/js/jquery-3.3.1.slim.min.js' %}"></script>
+<script src="{% static 'tfb/js/popper.min.js' %}"></script>
+<script src="{% static 'tfb/js/bootstrap.min.js' %}"></script>   
+ </body>
+</html>

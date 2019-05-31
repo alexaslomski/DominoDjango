@@ -1,0 +1,51 @@
+/* Fonts Poppins - main */
+@import url('https://fonts.googleapis.com/css?family=Coiny|Montserrat|Oxygen|Poppins|Varela+Round');
+
+html {
+    font-size: calc(0.5em + 1vw); 
+    max-width: 100%; 
+}
+
+/***** CREATEEVENT.CSS *****/
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*** Card ***/
+
+.card {
+    width: 70%;
+    max-width: 100%;
+    border: transparent;
+ }
+
+ .card-img-top-team {
+     border-radius: 50%;
+     width: 100px;
+     height: 100px;
+ }
+
+ .img-fluid {
+    width: 700px; 
+    height: 250px; 
+    border-radius: 0%;  
+ }
+
+.card-title-team {
+    text-align: center;
+    font-weight: bold;
+    color: #212121;
+}
+
+.card-text-team {
+    text-align: center;
+}
+
+/*** Buttons ***/
+
+.btn-save, .btn-speaker {
+  font-size: 1rem;
+  color: #fff;
+  background: #084E75;
+}
